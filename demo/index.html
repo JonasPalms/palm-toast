@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast Demo</title>
+  </head>
+  <body>
+    <div id="app">
+      <label for="toast-heading"
+        >Toast Heading
+        <input type="text" id="toast-heading" value="Toast Heading" />
+      </label>
+      <label for="toast-text"
+        >Toast Text
+        <textarea id="toast-text" rows="3">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </textarea>
+      </label>
+      <label for="toast-type"
+        >Toast Type
+        <select id="toast-type">
+          <option value="success">Success</option>
+          <option value="error">Error</option>
+          <option value="warning">Warning</option>
+          <option value="info">Info</option>
+          <option value="default">Default</option>
+        </select>
+      </label>
+      <label for="toast-position">
+        Toast Position
+        <select id="toast-position">
+          <option value="bottom-right">Bottom Right</option>
+          <option value="bottom-left">Bottom Left</option>
+          <option value="top-right">Top Right</option>
+          <option value="top-left">Top Left</option>
+        </select>
+      </label>
+      <label for="duration"
+        >Duration (s) <input type="number" id="duration" step="1" value="8"
+      /></label>
+      <label for="dissmissable">
+        Dissmissable
+        <input type="checkbox" id="dissmissable" checked />
+      </label>
+      <label for="pauseOnHover">
+        Pause on hover
+        <input type="checkbox" id="pauseOnHover" checked />
+      </label>
+      <button id="show-toast">Show Toast</button>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

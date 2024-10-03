@@ -1,0 +1,51 @@
+@import url('./reset.css');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+button#show-toast {
+  width: 100%;
+  margin-top: 2rem;
+  padding-block: 0.5rem;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  min-width: 400px;
+}
+
+select {
+  padding: 0.25rem;
+}
+
+textarea {
+  min-height: auto;
+}
+
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+}
+
+input[type='number'] {
+  padding: 0.25rem;
+  width: 3rem;
+}

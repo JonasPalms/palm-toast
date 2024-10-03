@@ -1,0 +1,35 @@
+{
+  "name": "palm-toast",
+  "version": "0.1.0",
+  "description": "A simple toast notification package",
+  "main": "dist/toast.umd.js",
+  "module": "dist/toast.mjs",
+  "style": "dist/style.css",
+  "types": "dist/toast.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/toast.umd.js",
+      "import": "./dist/toast.mjs",
+      "types": "./dist/toast.d.ts"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --emitDeclarationOnly"
+  },
+  "keywords": [
+    "toast",
+    "notification",
+    "UI"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Jonas Palm Sørensen",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "vite": "^5.4.4"
+  }
+}
